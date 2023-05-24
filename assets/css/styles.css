@@ -1,0 +1,258 @@
+:root {
+    --dark: #000000;
+    --primary: #146C94;
+    --secondary: #19A7CE;
+    --background: #F6F1F1;
+
+    --white: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: #fff;
+}
+
+h2 {
+    font-size: 3rem;
+    border-bottom: 2px solid var(--secondary);
+    padding: 2rem;
+}
+
+.btn {
+    padding: 2rem;
+    background-color: #19A7CE;
+    color: #f3ef00;
+    border-radius: 20px;
+    text-transform: uppercase;
+    border-style: none;
+
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 5px 18px -4px rgba(189, 185, 189, 1);
+    -moz-box-shadow: 0px 5px 18px -4px rgba(189, 185, 189, 1);
+    box-shadow: 0px 5px 18px -4px rgb(146, 144, 146);
+    background-color: var(--white);
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.title {
+    text-align: center;
+}
+
+.title span {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 140rem;
+    margin: 0 auto;
+}
+
+.navHeader {
+    background-color: var(--primary);
+    -webkit-box-shadow: 0px 7px 13px 4px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 7px 13px 4px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 7px 13px 4px rgba(0, 0, 0, 0.12);
+}
+
+.navbar {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (min-width: 480px) {
+    .navbar {
+        flex-direction: row;
+    }
+}
+
+
+.navbar a {
+    color: var(--white);
+    margin: .5rem;
+}
+
+.hero {
+    background-image: url("/assets/imgs/webDevolper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 50rem;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.hero_location svg {
+    color: #f3ef00;
+}
+
+.hero_location p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hero_location {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services {
+    padding: 3rem;
+}
+
+/* services */
+@media(min-width: 768px) {
+    .services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5rem;
+    }
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icons {
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 3rem;
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 3rem;
+}
+
+
+.service h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.service p {
+    text-align: justify;
+}
+
+.form {
+    margin: 0 auto;
+    width: min(60rem, 90%);
+}
+
+.form fieldset {
+    border: none;
+}
+
+.form legend {
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+
+@media(min-width: 768px) {
+    .form-group{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto 20rem auto ;
+        column-gap: 3rem;
+    }
+
+    .form-item:nth-child(3){
+        grid-column: 1 / 3;
+    }
+    .form-item:nth-child(4){
+        grid-column: 1 / 3;
+    }
+
+}
+.form {
+    margin-bottom: 1rem;
+    background-color: var(--primary);
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+.form-item label {
+    color: var(--dark);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.form-item .input-text {
+    background-color: #fff;
+    border: none;
+    border-radius: .5rem;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    -webkit-box-shadow: 0px 7px 13px 4px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 7px 13px 4px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 7px 13px 4px rgba(0, 0, 0, 0.12);
+}
+
+.form-item textarea{
+    height: 15rem;
+}
+
+
+.send .btn{
+    width: 100%
+}
+
+.footer{
+    text-align: center;
+    color: #19A7CE;
+    padding: 2rem;
+    margin-top: 2rem;
+}
